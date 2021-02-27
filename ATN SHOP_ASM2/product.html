@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATN Shop / Add Product</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body id="product-page">
+    <div class="form-title">
+        <h1> ATN SHOP - ADD PRODUCT </h1>
+    </div>
+    <form action="productsubmit.php" method="post">
+        <div class="form">
+            <div class="form-group">
+                <label for="product-name">Product name</label>
+                <input class="form-control" type="text" name="product-name" id="product-name" placeholder="Enter product's name" required>
+            </div>
+            <div class="form-group">
+                <label for="product-category">Category</label>
+                <input class="form-control before-add-btn" type="text" name="product-category" id="product-category" placeholder="Enter product's category" required>
+            </div>
+            <div class="form-group">
+                <label for="product-store">Store update</label>
+                <input class="form-control before-add-btn" type="text" name="store" id="store" placeholder="Enter Store update" required>
+            </div>
+            <div class="form-group">
+                <label for="product-quantity">Quantity</label>
+                <input class="form-control before-add-btn" type="number" name="product-quantity" id="product-quantity" placeholder="Enter quantity" required>
+            </div>
+            <div class="form-group">
+                <label for="product-price">Price</label>
+                <input class="form-control before-add-btn" type="number" name="product-price" id="product-price" placeholder="Enter product's price" required>
+            </div>
+            <div class="form-group">
+                <label for="product-quantity">Description</label>
+                <input class="form-control before-add-btn" type="text" name="product-description" id="product-description" placeholder="Enter Product's description" required>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-submit" type="submit">SUBMIT</button>
+                <button class="btn btn-reset" type="reset">RESET</button>
+                <input class="bth btn-modify" type="button" onclick="location.href='/productmodify.php';" value="MODIFY" />
+            </div>
+        </div>
+        <a href="/logout.php">
+            <h3 id="sign-out"> LOG OUT </h3>
+        </a>
+    </form>
+</body>
+
+</html>

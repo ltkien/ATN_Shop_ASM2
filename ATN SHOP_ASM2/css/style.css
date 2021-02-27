@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: underline;
+    color: #6470FF;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+body {
+    background-image: url('/image/background.jpg');
+}
+
+.flex {
+    display: flex;
+}
+
+.signin {
+    position: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 30px;
+}
+
+.signin-box>h3 {
+    margin-bottom: 2rem;
+}
+
+.signin-box>p {
+    color: var(--gray-color);
+}
+
+#sign-out {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group>input {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 0.5rem;
+    border: 1px solid var(--white-gray-color-color);
+}
+
+label.username,
+label.password {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.form-control {
+    padding: .594rem .75rem;
+    width: 400px;
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+    border: 1px solid #000000;
+}
+
+.form-group>.form-control {
+    border: 1px solid #000000;
+}
+
+.btn-signin {
+    padding: .594rem .75rem;
+    width: 400px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    background-color: white;
+    border: 1px solid #000000;
+}
+
+#product-page {
+    background-image: url('/image/background.jpg');
+}
+
+#boss-view-page {
+    background: url('../image/background.jpg');
+}
+
+.form-title {
+    text-align: center;
+    font-size: 1.3rem;
+    color: black;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+.form>.form-group>label {
+    color: var(--white-gray-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.form>.form-group>p {
+    color: var(--white-gray-color);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form {
+    padding: 1rem 2rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.form>.form-group {
+    margin-bottom: 0.5rem;
+}
+
+.form>.form-group>input {
+    border-radius: 5px;
+    background-color: white;
+    opacity: 100%;
+}
+
+textarea {
+    min-width: 100%;
+    min-height: 150px;
+    padding: 0.5rem;
+    resize: vertical;
+    border-radius: 5px;
+    margin-bottom: 0.5rem !important;
+    border: 1px solid whitesmoke !important;
+}
+
+.form-control:focus {
+    border-color: black;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem black
+}
+
+.btn-group {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.btn-group>.btn-submit {
+    padding: 1rem 0;
+    width: 17.5rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.btn-reset {
+    padding: 1rem 0;
+    width: 17.5rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.btn-modify {
+    padding: 1rem 0;
+    width: 17.5rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+table {
+    background-color: #fff;
+}
+
+table th {
+    background-color: black;
+    color: white;
+}
