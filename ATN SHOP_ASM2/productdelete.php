@@ -8,7 +8,7 @@ sslmode=require");
 if ($connect === false) {
   die("ERROR: Could not connect to the database server!");
 } else {
-  //echo ("Connect successfully!");
+  echo ("Connect successfully!");
   $product_id = $_GET['product_id'];
 }
 //echo ("Connect successfully!");
