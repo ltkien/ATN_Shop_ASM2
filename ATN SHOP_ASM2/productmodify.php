@@ -83,7 +83,7 @@ $resultCheck = pg_num_rows($result);
           ?>
         </tbody>
       </table>
-<div class="btn-group_bottom">
+        <div class="btn-group_bottom">
         <button class="btn btn-logout" type"logout" onclick="location.href='/logout.php';">LOGOUT</button>
         </div>
     </div>
