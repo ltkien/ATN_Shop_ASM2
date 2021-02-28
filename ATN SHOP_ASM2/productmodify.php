@@ -83,9 +83,9 @@ $resultCheck = pg_num_rows($result);
           ?>
         </tbody>
       </table>
-      <a href="./logout.php">
-        <h3 id="sign-out"> LOG OUT </h3>
-      </a>
+<div class="btn-group_bottom">
+        <button class="btn btn-logout" type"logout" onclick="location.href='/logout.php';">LOGOUT</button>
+        </div>
     </div>
 </body>
 
