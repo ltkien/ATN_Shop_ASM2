@@ -194,7 +194,7 @@ textarea {
 }
 
 .btn-group_bottom {
-    display: flex;
+    display: center;
     justify-content: space-between;
     align-items: stretch;
 }
