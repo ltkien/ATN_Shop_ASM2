@@ -194,9 +194,9 @@ textarea {
 }
 
 .btn-group_bottom {
-    display: center;
-    justify-content: space-between;
-    align-items: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-group_bottom>.btn-logout { 
