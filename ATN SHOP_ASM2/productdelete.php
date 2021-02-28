@@ -1,4 +1,5 @@
 <?php
+echo ("Connect successfully!");
 $connect = pg_connect("host=ec2-54-220-35-19.eu-west-1.compute.amazonaws.com
 dbname=d3d86pg4upllsh
 port=5432
@@ -8,7 +9,6 @@ sslmode=require");
 if ($connect === false) {
   die("ERROR: Could not connect to the database server!");
 } else {
-  echo ("Connect successfully!");
   $product_id = $_GET['product_id'];
 }
 //echo ("Connect successfully!");
