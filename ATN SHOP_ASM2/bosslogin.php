@@ -23,7 +23,7 @@ if ($account === false) {
     header('Location: ./bossviewdata.php');
   } else {
     echo "<script>alert('Wrong username or password. Please try again!');</script>");
-    header('refresh: 3; url=/index.php'); //wrong reset
+    header('refresh: 3; url=/bossindex.php'); //wrong reset
   }
 }
 pg_close($account);
