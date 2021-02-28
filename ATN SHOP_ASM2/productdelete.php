@@ -15,7 +15,7 @@ $del =  "delete from product where product_id='$product_id'";
 $data = pg_query($connect,$del);
 if ($data) {
   echo "<script>alert('Edited succesfully!, Refresh');</script>";
-  header('refresh: 3; url=productform.php');
+  header('refresh: 1; url=productform.php');
 } else {
   echo ("ERROR + $query") . pg_errormessage($query);
 }
