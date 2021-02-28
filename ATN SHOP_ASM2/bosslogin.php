@@ -22,7 +22,7 @@ if ($account === false) {
     $_SESSION["username"] = $username;
     header('Location: ./bossviewdata.php');
   } else {
-    echo "<script>alert('Wrong username or password. Please try again!');</script>");
+    echo "<script>alert('Wrong username or password. Please try again!');</script>";
     header('refresh: 3; url=/bossindex.php'); //wrong reset
   }
 }
