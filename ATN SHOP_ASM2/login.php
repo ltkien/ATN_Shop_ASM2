@@ -9,6 +9,7 @@ sslmode=require");
 if ($account === false) {
   die("ERROR: Could not connect to the database server!");
 } else {
+  echo ("Connect successfully! ");
   $username = $_POST['username'];
   $password = $_POST['password'];
 
@@ -21,7 +22,7 @@ if ($account === false) {
     header('Location: /productform.php');
   } else {
     echo ("Wrong username or password. Please try again!") . pg_errormessage($query);
-    header('refresh: 2; url=/index.php'); //wrong reset
+    header('refresh: 1; url=/index.php'); //wrong reset
   }
 }
 pg_close($account);
