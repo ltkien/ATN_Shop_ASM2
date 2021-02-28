@@ -1,5 +1,4 @@
 <?php
-echo ("Connect successfully!");
 $connect = pg_connect("host=ec2-54-220-35-19.eu-west-1.compute.amazonaws.com
 dbname=d3d86pg4upllsh
 port=5432
@@ -11,7 +10,7 @@ if ($connect === false) {
 } else {
   $product_id = $_GET['product_id'];
 }
-//echo ("Connect successfully!");
+echo ("Connect successfully!");
 $query = "DELETE FROM product WHERE PRODUCTID='$product_id'";
 $data = pg_query($connect, $query);
 if ($data) {
