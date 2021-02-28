@@ -193,6 +193,17 @@ textarea {
     border-radius: 5px;
 }
 
+.btn-logout {
+    padding: 1rem 0;
+    width: 17.5rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 table {
     background-color: #fff;
 }
