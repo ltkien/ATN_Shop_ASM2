@@ -22,8 +22,8 @@ if ($account === false) {
     $_SESSION["username"] = $username;
     header('Location: ./bossviewdata.php');
   } else {
-    echo ("Wrong username or password. Please try again!") . pg_errormessage($query);
-    header('refresh: 2; url= ./bosslogin.php');
+    echo "<script>alert('Wrong username or password. Please try again!');</script>");
+    header('refresh: 3; url=/index.php'); //wrong reset
   }
 }
 pg_close($account);
