@@ -21,7 +21,7 @@ if ($account === false) {
     $_SESSION["username"] = $username;
     header('Location: /productform.php');
   } else {
-    echo ("Wrong username or password. Please try again!");
+    echo "<script>alert('Wrong username or password. Please try again!');</script>");
     header('refresh: 1; url=/index.php'); //wrong reset
   }
 }
