@@ -22,7 +22,7 @@ VALUES('$product_name', '$product_price', '$product_category', '$atn_store', '$p
 $result = pg_query($connect, $query);
 if ($result) {
   echo "<script>alert('Record added succesfully!, Refresh');</script>";
-  header('refresh: 3; url=productform.php');
+  header('refresh: 1; url=productform.php');
 } else {
   echo ("ERROR + $query") . pg_errormessage($query);
 }
