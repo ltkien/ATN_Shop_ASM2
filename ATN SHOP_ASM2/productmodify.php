@@ -57,7 +57,7 @@ $resultCheck = pg_num_rows($result);
                   <?php echo $row['product_name']; ?>
                 </td>
                 <td>
-                  <?php echo $row['product_price']; ?>
+                  <?php echo $row['product_price']Đ; ?>
                 </td>
                 <td>
                   <?php echo $row['product_category']; ?>
