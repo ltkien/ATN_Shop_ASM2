@@ -10,7 +10,7 @@ if ($connect === false) {
 } else {
   $product_id = $_GET['product_id'];
 }
-echo ("Connect successfully!");
+//echo ("Connect successfully!");
 $query = "DELETE FROM product WHERE PRODUCTID='$product_id'";
 $data = pg_query($connect, $query);
 if ($data) {
