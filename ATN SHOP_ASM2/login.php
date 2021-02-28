@@ -16,10 +16,10 @@ if ($account === false) {
   $query = "SELECT * FROM staff WHERE username = '$username' AND \"password\" = '$password'";
   $result = pg_query($account, $query);
   $count = pg_num_rows($result);
+      echo ("Connect successfully! ");
   if ($count == 1) {
     session_start();
     $_SESSION["username"] = $username;
-    echo ("Connect successfully! ");
     header('Location: /productform.php');
   } else {
     
