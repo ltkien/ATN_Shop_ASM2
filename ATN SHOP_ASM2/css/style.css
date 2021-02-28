@@ -193,10 +193,7 @@ textarea {
     border-radius: 5px;
 }
 
-.btn-logout {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
+.btn-group_bottom>.btn-logout { 
     padding: 1rem 0;
     width: 17.5rem;
     font-size: 16px;
