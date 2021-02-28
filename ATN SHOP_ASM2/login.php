@@ -16,14 +16,12 @@ if ($account === false) {
   $query = "SELECT * FROM staff WHERE username = '$username' AND \"password\" = '$password'";
   $result = pg_query($account, $query);
   $count = pg_num_rows($result);
-      echo ("Connect successfully! ");
   if ($count == 1) {
     session_start();
     $_SESSION["username"] = $username;
     header('Location: /productform.php');
   } else {
-    
-    echo ("Wrong username or password. Please try again!") . pg_errormessage($query);
+    echo ("Wrong username or password. Please try again!");
     header('refresh: 1; url=/index.php'); //wrong reset
   }
 }
