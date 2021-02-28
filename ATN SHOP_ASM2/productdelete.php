@@ -5,6 +5,7 @@ port=5432
 user=zmvsrcbksqwkdt
 password=9c571947fb86d6d6fbde944f4bd9d3dfd522e56b3652b3731394cd32983ef33e
 sslmode=require");
+echo ("ERROR");
 if ($connect === false) {
   die("ERROR: Could not connect to the database server!");
 } else {
