@@ -72,7 +72,7 @@ $resultCheck = pg_num_rows($result);
                   <?php echo $row['product_description']; ?>
                 </td>
                 <td>
-                  <div class="delete" data-toggle="buttons"><a href="productdelete.php?product_id=<?php echo $row["product_id"]; ?>">DELETE</a></div>
+                  <div class="delete" data-toggle="buttons"><a href="toydelete.php?id=<?php echo $row["id"]; ?>">DELETE</a></div>
                 </td>
               </tr>
           <?php
